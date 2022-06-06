@@ -1,12 +1,14 @@
 # Thesis_WardvanGerwen
 
 Within this Github I present the code and node details used for my Thesis: **Blockchain based data management system in an IoT environment.**
-The goal of this PoC is to try and settle near-instant low cost transactions on the LN while including an decryption key.
-The decryption key belongs to a encrypted file stored on IPFS, whereby the 
+
+The goal of this PoC is to test near-instant low cost transactions on the LN while including an decryption key.
+The decryption key belongs to a encrypted file stored on IPFS, whereby the participants shared this CID beforehand. 
+The LN is used to transfer the value.
 
 **Software used**
-LightningPolar: https://lightningpolar.com 
-Docker: https://www.docker.com
+LightningPolar: https://lightningpolar.com #
+Docker: https://www.docker.com #
 CID on IPFS???
 
 **Node details**
