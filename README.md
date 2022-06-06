@@ -9,7 +9,6 @@ The LN is used to transfer the value.
 **Software used**.  
 LightningPolar: https://lightningpolar.com  
 Docker: https://www.docker.com  
-CID on IPFS???  
 
 **Node details**.  
 5 Bitcoin core nodes  
