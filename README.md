@@ -11,9 +11,9 @@ LightningPolar: https://lightningpolar.com
 Docker: https://www.docker.com  
 
 **Node details**.  
-5 Bitcoin core nodes  
-21 Lightning LND Nodes  
-10 Payment channels between those nodes   
+3 Bitcoin core nodes  
+10 Lightning LND Nodes  
+8 Payment channels between those nodes   
 
 
 
@@ -24,19 +24,11 @@ Docker: https://www.docker.com
 Within the basic architecture
 
 ```
-Input: DataOwner, DataUser, Terms, EncryptionKey, EncryptedDataLocation 
-Output: Null 
-// DataOwner check
+Input: 
+Output: 
 
-if msg.sender is not owner then 
-  throw; 
-end
 
-If ETH value contract >0 then 
-  insert(Terms, EncryptionKey); 
-end
 
-Notes: insert(EncryptedDataLocation)
 ```
 
 ## Advanced architecture: 
