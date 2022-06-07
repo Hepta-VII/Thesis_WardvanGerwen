@@ -41,6 +41,12 @@ Results of Joost Jager:
 
 Within the basic architecture
 
+Steps:
+1) Node opening
+2) Payment channel opening
+3) Transactions within the payment channel
+4) Payment channel closing after the market transaction is finalised
+
 ```
 Input: 
 Output: 
@@ -51,7 +57,11 @@ Output:
 
 ## Advanced architecture: 
 
-Within the advanczed architecture the payments are routed through the lightning network with the use of HTLC contracts. 
+1) Node opening
+2) Bidirectional payment channel opening
+3) Transactions are performed over the lightning network leveraging the point-to-point architecture. Payments are routed through the lightning network with the use of HTLC contracts.
+4) Channels are only closed if needed, not after each market transaction/deal  
+
 
 ```
 Input: 
