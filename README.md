@@ -52,6 +52,13 @@ Output:
 
 Within the advanczed architecture the payments are routed through the lightning network with the use of HTLC contracts. 
 
+```
+Input: 
+Output: 
+
+
+
+```
 
 
 ## Results
@@ -62,3 +69,10 @@ For more information: https://medium.com/@timevalueofbtc/the-time-value-of-bitco
 
 
 **Basic architecture** 
+
+No scaleable on global scale
+
+
+**Basic architecture** 
+
+Maybe scaleable on global scale
