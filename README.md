@@ -7,21 +7,21 @@ The decryption key belongs to a encrypted file stored on IPFS, whereby the parti
 The LN is used to transfer the value.  
 
 **Software used**.  
-LightningPolar: https://lightningpolar.com  
-Docker: https://www.docker.com  
+- LightningPolar: https://lightningpolar.com  
+- Docker: https://www.docker.com  
 
 
 **Information**
-The Lightning network: https://lightning.network  
-Additional information LN: https://wiki.ion.radar.tech  
-Basic of Lightning Technology (BOLT): https://docs.lightning.engineering/the-lightning-network/lightning-overview/understanding-lightning-invoices  
-BOLT11: https://github.com/lightning/bolts/blob/master/11-payment-encoding.md  
-State of LN: https://bitcoinvisuals.com/lightning  
+- The Lightning network: https://lightning.network  
+- Additional information LN: https://wiki.ion.radar.tech  
+- Basic of Lightning Technology (BOLT): https://docs.lightning.engineering/the-lightning-network/lightning-overview/understanding-lightning-invoices  
+- BOLT11: https://github.com/lightning/bolts/blob/master/11-payment-encoding.md  
+- State of LN: https://bitcoinvisuals.com/lightning  
 
 **Node details**.  
-3 Bitcoin core nodes  
-10 Lightning LND nodes, using BOLT11 invoices with including the decryption key in the memo  
-8 Payment channels between those nodes   
+- 3 Bitcoin core nodes  
+- 10 Lightning LND nodes, using BOLT11 invoices with including the decryption key in the memo  
+- 8 Payment channels between those nodes   
 
 **Previous test**
 TPS Lightning test by Joost Jager: https://github.com/bottlepay/lightning-benchmark 
