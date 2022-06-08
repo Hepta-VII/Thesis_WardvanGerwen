@@ -85,9 +85,10 @@ The tps obtained within the payment channel is sufficient to perform the intente
 However when looking at the total architecture the solution is not scalable due to the bottle neck in step 4. 
 
 
-**Basic architecture** 
+**Advanced architecture** 
 
 The tps obtained by routing transactions over the LN is sufficient to perform the intented transactions.  
 However when looking at the total architecture the solution is only scalable with enought development time.  
 The opening of nodes and channels need to be distributed on-chain and ensures that the growth of the LN takes time.  
 This does not create a permanent bottle neck like the one in the basic architecture, but does present with the reality that the solution can only grow/scale if given sufficient time.  
+**Please note** that it is difficult to assed the tps in the whole network by extrapolating these results. The results are presented within the testnet environment. Growth of the lightning network to the point of global adoption can in pratice give significant different results and measuring the mainnet tps of the lightning network dd May 2022 is practically not feasible.  
