@@ -79,13 +79,13 @@ The costs are subject to market conditions and node operators in a real-world se
 For more information: https://medium.com/@timevalueofbtc/the-time-value-of-bitcoin-and-lnrr-e0c435931bd8  
 
 
-**Basic architecture** 
+### Basic architecture
 
 The tps obtained within the payment channel is sufficient to perform the intented transactions.  
 However when looking at the total architecture the solution is not scalable due to the bottle neck in step 4. 
 
 
-**Advanced architecture** 
+### Advanced architecture
 
 The tps obtained by routing transactions over the LN is sufficient to perform the intented transactions.  
 However when looking at the total architecture the solution is only scalable with enought development time.  
