@@ -1,6 +1,7 @@
 # Thesis_WardvanGerwen
 
 Within this Github I present the code and node details used for my Thesis: **Blockchain based data management system in an IoT environment.**
+The test are ran between 20th of May and 7th of June 2022 and documented betwwen 6th - 9th of June 2022.
 
 The goal of this PoC is to test near-instant low cost transactions on the LN while including an decryption key   
 The decryption key belongs to a encrypted file stored on IPFS, whereby the participants shared this CID beforehand   
