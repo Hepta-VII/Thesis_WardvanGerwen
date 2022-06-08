@@ -13,6 +13,7 @@ The LN is used to transfer the value.
 
 **Information**
 - The Lightning network: https://lightning.network  
+- Mastering the Lightning network: https://github.com/lnbook/lnbook/blob/develop/README.md 
 - Additional information LN: https://wiki.ion.radar.tech  
 - Basic of Lightning Technology (BOLT): https://docs.lightning.engineering/the-lightning-network/lightning-overview/understanding-lightning-invoices  
 - BOLT11: https://github.com/lightning/bolts/blob/master/11-payment-encoding.md  
