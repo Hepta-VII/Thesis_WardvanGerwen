@@ -60,7 +60,7 @@ Output:
 1) Node opening
 2) Bidirectional payment channel opening
 3) Transactions are performed over the lightning network leveraging the point-to-point architecture. Payments are routed through the lightning network with the use of HTLC contracts.
-4) Channels are only closed if needed, not after each market transaction/deal  
+
 
 
 ```
@@ -81,9 +81,13 @@ For more information: https://medium.com/@timevalueofbtc/the-time-value-of-bitco
 
 **Basic architecture** 
 
-No scaleable on global scale
+The tps obtained within the payment channel is sufficient to perform the intented transactions.  
+However when looking at the total architecture the solution is not scalable due to the bottle neck in step 4. 
 
 
 **Basic architecture** 
 
-Maybe scaleable on global scale
+The tps obtained by routing transactions over the LN is sufficient to perform the intented transactions.  
+However when looking at the total architecture the solution is only scalable with enought development time.  
+The opening of nodes and channels need to be distributed on-chain and ensures that the growth of the LN takes time.  
+This does not create a permanent bottle neck like the one in the basic architecture, but does present with the reality that the solution can only grow/scale if given sufficient time.  
