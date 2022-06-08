@@ -80,10 +80,9 @@ For more information: https://medium.com/@timevalueofbtc/the-time-value-of-bitco
 
 
 ### Basic architecture
-
-I run iterations of 1 payments on each iteration. 
+ 
 The transactions are simulated between parties in one payment channel.  
-| Iterations | Average tps             | Avg latency (seconds) |
+| Transactions | Average tps             | Avg latency (seconds) |
 |------------|-------------------------|-----------------------|
 | 100        |                     68  | 0,8                   |
 | 250        |                     64  | 0,9                   |
@@ -95,9 +94,8 @@ However when looking at the total architecture the solution is not scalable due 
 
 ### Advanced architecture
 
-I run iterations of 1 payments on each iteration. 
 The transactions are routed through 8 payment channels on testnet using LightningPolar.  
-| Iterations | Average tps             | Avg latency (seconds) |
+| Transactions | Average tps             | Avg latency (seconds) |
 |------------|-------------------------|-----------------------|
 | 100        |                     40  | 2,8                   |
 | 250        |                     35  | 2,7                   |
