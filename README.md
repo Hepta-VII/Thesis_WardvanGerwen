@@ -25,7 +25,7 @@ The LN is used to transfer the value.
 - 3 Bitcoin core nodes  
 - 10 Lightning LND nodes, using BOLT11 invoices with including the decryption key in the memo  
 - 12 Payment channels between those nodes   
-The set-up is visualized [Here]: LINK
+The set-up is visualized [Here]:https://github.com/Hepta-VII/Thesis_WardvanGerwen/blob/main/Screenshot%20Alice.png and [Here]:https://github.com/Hepta-VII/Thesis_WardvanGerwen/blob/main/Screenshot%20structure.png
 
 **Previous test**
 TPS Lightning test by Joost Jager: https://github.com/bottlepay/lightning-benchmark 
