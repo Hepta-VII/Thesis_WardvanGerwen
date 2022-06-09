@@ -69,10 +69,10 @@ Output:
 ```
 // Example out of LDK.
 
-"lnbc2500u1pvjluezsp5zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zygspp5qqqsyqcyq5rqwzqfqqqsyqcyq5rqwzqfqqqsyqcyq5rqwzqfqypqdq5xysxxatsyp3k7enxv4jsxqzpu9qrsgquk0rl77nj30yxdy8j9vdx85fkpmdla2087ne0xh8nhedh8w27kyke0lp53ut353s06fv3qfegext0eh0ymjpf39tuven09sam30g4vgpfna3rh".to_owned(),
+"lnbc_invoiceId".to_owned(),
 			InvoiceBuilder::new(Currency::Bitcoin)
-				.amount_milli_satoshis(250_000_000)
-				.duration_since_epoch(Duration::from_secs(1496314658))
+				.amount_milli_satoshis(150_000_000)
+				.duration_since_epoch(Duration::from_secs(Amount_sec))
 				.payment_secret(PaymentSecret([0x11; 32]))
 				.payment_hash(sha256::Hash::from_hex(
 					"0001020304050607080900010203040506070809000102030405060708090102"
