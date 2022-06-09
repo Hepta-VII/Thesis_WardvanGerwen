@@ -208,6 +208,7 @@ However when looking at the total architecture the solution is not scalable due 
 | Payment channel closing            | 600           | 1801,1                   | 10            | 30,02                                   | 0,5         | 1,50                  |
 | Aggregated total                   |               | 1801,1                   |               |                                  30,02  |             | 1,5                   |
 | Aggregated normal interaction      |               | 1201,1                   |               |                                  20,02  |             | 1                     |  
+
 *Only needed the first time when interacting with LN or when more funds are deposited.
 
 For on-chain transactions I use the average block-time of 10 min.  
@@ -234,7 +235,8 @@ Note that larger value transactions or different liquidity within payment channe
 | Payment channel opening            | 600           | 1200                     | 10            | 20                                       | 0,5         | 1                     |
 | Transactions                       | 1,1           | 1201,1                   | 0,02          | 20,02                                    | 0,005       | 1,01                  |
 | Aggregated total                   |               | 1201,1                   |               |                                  20,02   |             | 1,01                  |
-| Aggregated when network adoption   |               | 1,1                      |               |                                    0,02  |             | 0,005                 |. 
+| Aggregated when network adoption   |               | 1,1                      |               |                                    0,02  |             | 0,005                 |  
+
 *Only needed the first time when interacting with LN or when more funds are deposited. Within this architecture the deposists and withdraw of fund with on-chain transactions will be present. 
 
 For on-chain transactions I use the average block-time of 10 min.  
