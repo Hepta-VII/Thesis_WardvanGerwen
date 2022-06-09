@@ -23,7 +23,7 @@ The LN is used to transfer the value.
 **Node details**.  
 - 3 Bitcoin core nodes  
 - 10 Lightning LND nodes, using BOLT11 invoices with including the decryption key in the memo  
-- 8 Payment channels between those nodes   
+- 12 Payment channels between those nodes   
 
 **Previous test**
 TPS Lightning test by Joost Jager: https://github.com/bottlepay/lightning-benchmark 
@@ -83,7 +83,9 @@ For more information: https://medium.com/@timevalueofbtc/the-time-value-of-bitco
 
 ### Basic architecture
  
-The transactions are simulated between parties in one payment channel.  
+The transactions are simulated between parties in one payment channel. 
+The payment channel has a capacity of 15.000.000 and each transaction is for 10.000 sats. 
+
 | Transactions | Average tps             | Avg latency (seconds) |
 |------------|-------------------------|-----------------------|
 | 100        |                     68  | 0,8                   |
@@ -96,7 +98,11 @@ However when looking at the total architecture the solution is not scalable due 
 
 ### Advanced architecture
 
-The transactions are routed through 8 payment channels on testnet using LightningPolar.  
+The transactions are routed payment channels on testnet using LightningPolar. 
+The value of each transaction that is routed is 10.000 sats. 
+Each payment channel has an capacity of 15.000.000 sats. 
+Note that larger value transactions or different liquidity within payment channels can give other results.
+
 | Transactions | Average tps             | Avg latency (seconds) |
 |------------|-------------------------|-----------------------|
 | 100        |                     40  | 2,8                   |
