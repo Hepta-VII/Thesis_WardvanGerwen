@@ -243,6 +243,7 @@ For on-chain transactions I use the average block-time of 10 min.
 One confirmation is deemed sufficient for the purpose of this thesis, once the values are higher a participat should consider multiple confirmations.  
 I document the costs of the blockspace bit higher than the dd May 2022 price of <0.20 USD. More usage of the block space will increase the prices and 0.2 USD will be a underestimation with increased adoption.  
 
+**Additional notes**
 
 The tps obtained by routing transactions over the LN is sufficient to perform the intented transactions.  
 However when looking at the total architecture the solution is only scalable with enought development time.  
