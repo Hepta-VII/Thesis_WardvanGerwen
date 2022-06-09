@@ -75,7 +75,7 @@ Output:
 				.duration_since_epoch(Duration::from_secs(Amount_sec))
 				.payment_secret(PaymentSecret([0x11; 32]))
 				.payment_hash(sha256::Hash::from_hex(
-					"0001020304050607080900010203040506070809000102030405060708090102"
+					"Hash"
 				).unwrap())
 				.description("DECRYPTION_KEY".to_owned())
 				.expiry_time(Duration::from_secs(60))
@@ -83,7 +83,7 @@ Output:
 				.unwrap()
 				.sign(|_| {
 					RecoverableSignature::from_compact(
-						&hex::decode("e59e3ffbd3945e4334879158d31e89b076dff54f3fa7979ae79df2db9dcaf5896cbfe1a478b8d2307e92c88139464cb7e6ef26e414c4abe33337961ddc5e8ab1").unwrap(),
+						&hex::decode("Decode_Hash").unwrap(),
 						RecoveryId::from_i32(1).unwrap()
 					)
 				}).unwrap(),
