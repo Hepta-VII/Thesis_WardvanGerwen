@@ -14,7 +14,8 @@ The LN is used to transfer the value.
 
 **Information**
 - The Lightning network: https://lightning.network  
-- Mastering the Lightning network: https://github.com/lnbook/lnbook/blob/develop/README.md 
+- Mastering the Lightning network: https://github.com/lnbook/lnbook/blob/develop/README.md, code examples out of the book are used.
+- Lightning development kit: https://github.com/lightningdevkit, code examples from LDK are used.
 - Additional information LN: https://wiki.ion.radar.tech  
 - Basic of Lightning Technology (BOLT): https://docs.lightning.engineering/the-lightning-network/lightning-overview/understanding-lightning-invoices  
 - BOLT11: https://github.com/lightning/bolts/blob/master/11-payment-encoding.md  
@@ -60,14 +61,34 @@ Output:
 ## Advanced architecture: 
 
 1) Node opening
-2) Bidirectional payment channel opening
+2) Payment channel opening
 3) Transactions are performed over the lightning network leveraging the point-to-point architecture. Payments are routed through the lightning network with the use of HTLC contracts.
 
 
 
 ```
-Input: 
-Output: 
+// Example out of LDK.
+
+"lnbc2500u1pvjluezsp5zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zyg3zygspp5qqqsyqcyq5rqwzqfqqqsyqcyq5rqwzqfqqqsyqcyq5rqwzqfqypqdq5xysxxatsyp3k7enxv4jsxqzpu9qrsgquk0rl77nj30yxdy8j9vdx85fkpmdla2087ne0xh8nhedh8w27kyke0lp53ut353s06fv3qfegext0eh0ymjpf39tuven09sam30g4vgpfna3rh".to_owned(),
+			InvoiceBuilder::new(Currency::Bitcoin)
+				.amount_milli_satoshis(250_000_000)
+				.duration_since_epoch(Duration::from_secs(1496314658))
+				.payment_secret(PaymentSecret([0x11; 32]))
+				.payment_hash(sha256::Hash::from_hex(
+					"0001020304050607080900010203040506070809000102030405060708090102"
+				).unwrap())
+				.description("DECRYPTION_KEY".to_owned())
+				.expiry_time(Duration::from_secs(60))
+				.build_raw()
+				.unwrap()
+				.sign(|_| {
+					RecoverableSignature::from_compact(
+						&hex::decode("e59e3ffbd3945e4334879158d31e89b076dff54f3fa7979ae79df2db9dcaf5896cbfe1a478b8d2307e92c88139464cb7e6ef26e414c4abe33337961ddc5e8ab1").unwrap(),
+						RecoveryId::from_i32(1).unwrap()
+					)
+				}).unwrap(),
+			false, // Same features as set in InvoiceBuilder
+			false, // No unknown fields
 
 
 
