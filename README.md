@@ -233,9 +233,9 @@ Note that larger value transactions or different liquidity within payment channe
 |------------------------------------|---------------|--------------------------|---------------|------------------------------------------|-------------|-----------------------|
 | Opening a node & depositing funds* | 600           | 600                      | 10            | 10                                       | 0,5         | 0,5                   |
 | Payment channel opening            | 600           | 1200                     | 10            | 20                                       | 0,5         | 1                     |
-| Transactions                       | 1,1           | 1201,1                   | 0,02          | 20,02                                    | 0,005       | 1,01                  |
-| Aggregated total                   |               | 1201,1                   |               |                                  20,02   |             | 1,01                  |
-| Aggregated when network adoption   |               | 1,1                      |               |                                    0,02  |             | 0,005                 |  
+| Transactions                       | 2,8           | 1202,8                   | 0,02          | 20,02                                    | 0,005       | 1,01                  |
+| Aggregated total                   |               | 1202,8                   |               |                                  20,02   |             | 1,01                  |
+| Aggregated when network adoption   |               | 2,8                      |               |                                    0,02  |             | 0,005                 |  
 
 *Only needed the first time when interacting with LN or when more funds are deposited. Within this architecture the deposists and withdraw of fund with on-chain transactions will be present. 
 
